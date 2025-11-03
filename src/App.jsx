@@ -6,10 +6,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
-import NavigateExample from "./pages/examples/NavigateExample";
+import ProjectIndex from "@/pages/projects/Index";
 
-import BooksIndex from "./pages/examples/books/index";
-import BooksShow from "./pages/examples/books/show";
 
 export default function App() {
     return (
@@ -20,9 +18,7 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
 
-            <Route path="/examples/navigate" element={<NavigateExample />} />
-            <Route path="/examples/books" element={<BooksIndex />} />
-            <Route path="/examples/books/:id" element={<BooksShow />} />
+            <Route path="/projects" element={<ProjectIndex />} />
 
             <Route path="/*" element={<PageNotFound />} />
         </Routes>
