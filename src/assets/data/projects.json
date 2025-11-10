@@ -1,5 +1,6 @@
 [
     {
+        "slug": "todo-app",
         "title": "Todo App",
         "description": "A simple todo application to manage daily tasks",
         "screenshots": [
@@ -9,7 +10,7 @@
             }
         ],
         "url": "https:example.com/todo-app",
-        "github": "",
+        "github": "https://github.com/MatthewSeymour1/react-portfolio",
         "date": "2025",
         "tags": ["React", "JavaScript", "CSS", "HTML"]
     }
