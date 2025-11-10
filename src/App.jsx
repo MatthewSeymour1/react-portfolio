@@ -19,6 +19,7 @@ export default function App() {
     return (
 
         <div className="min-h-screen bg-background text-foreground relative">
+            <Navbar />
             <main className="max-w-4xl mx-auto ">
                 <Intro />
                 <Projects />
