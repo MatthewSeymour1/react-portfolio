@@ -1,6 +1,6 @@
 export default function Intro() {
     return (
-        <header id="intro" className="min-h-screen flex items-center">
+        <header id="Intro" className="min-h-screen flex items-center">
             <div className="grid lg:grid-cols-5 gap-12 sm:gap-16 w-full">
                 <div className="lg:col-span-3 space-y-6 sm:space-y-8">
                 <div className="space-y-3 sm:space-y-2">

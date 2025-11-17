@@ -13,5 +13,65 @@
         "github": "https://github.com/MatthewSeymour1/react-portfolio",
         "date": "2025",
         "tags": ["React", "JavaScript", "CSS", "HTML"]
+    },
+        {
+        "slug": "gif-app",
+        "title": "Gif App",
+        "description": "A simple Tenor Gif that demonstrates API integration and dynamic content loading.",
+        "screenshots": [
+            {
+                "url": "https://picsum.photos/seed/todoapp/600/400",
+                "caption": "Screenshot of the Gif App"
+            }
+        ],
+        "url": "https:example.com/gif-app",
+        "github": "",
+        "date": "2025",
+        "tags": ["React", "JavaScript", "CSS", "HTML"]
+    },
+        {
+        "slug": "todo-app2",
+        "title": "Todo App",
+        "description": "A simple todo application to manage daily tasks",
+        "screenshots": [
+            {
+                "url": "https://picsum.photos/seed/todoapp/600/400",
+                "caption": ""
+            }
+        ],
+        "url": "https:example.com/todo-app",
+        "github": "https://github.com/MatthewSeymour1/react-portfolio",
+        "date": "2025",
+        "tags": ["React", "JavaScript", "CSS", "HTML"]
+    },
+        {
+        "slug": "gif-app2",
+        "title": "Gif App",
+        "description": "A simple Tenor Gif that demonstrates API integration and dynamic content loading.",
+        "screenshots": [
+            {
+                "url": "https://picsum.photos/seed/todoapp/600/400",
+                "caption": "Screenshot of the Gif App"
+            }
+        ],
+        "url": "https:example.com/gif-app",
+        "github": "",
+        "date": "2025",
+        "tags": ["React", "JavaScript", "CSS", "HTML"]
+    },
+            {
+        "slug": "gif-app3",
+        "title": "Gif App",
+        "description": "A simple Tenor Gif that demonstrates API integration and dynamic content loading.",
+        "screenshots": [
+            {
+                "url": "https://picsum.photos/seed/todoapp/600/400",
+                "caption": "Screenshot of the Gif App"
+            }
+        ],
+        "url": "https:example.com/gif-app",
+        "github": "",
+        "date": "2025",
+        "tags": ["React", "JavaScript", "CSS", "HTML"]
     }
 ]
