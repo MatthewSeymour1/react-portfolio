@@ -6,10 +6,10 @@ export default function Intro() {
                 <div className="space-y-3 sm:space-y-2">
                     <div className="text-sm text-muted-foreground tracking-wider">PORTFOLIO / 2025</div>
                     <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight">
-                    Mohammed
+                    Matthew
                     
 
-                    <span className="text-muted-foreground">Che</span>
+                    <span className="text-muted-foreground">Seymour</span>
                     </h1>
                 </div>
 
@@ -34,16 +34,16 @@ export default function Intro() {
                 <div className="space-y-4">
                     <div className="text-sm text-muted-foreground font-mono">CURRENTLY</div>
                     <div className="space-y-2">
-                    <div className="text-foreground">Lecturer</div>
+                    <div className="text-foreground">Student</div>
                     <div className="text-muted-foreground">@ IADT</div>
-                    <div className="text-xs text-muted-foreground">2025 — Present</div>
+                    <div className="text-xs text-muted-foreground">2023 — Present</div>
                     </div>
                 </div>
 
                 <div className="space-y-4">
                     <div className="text-sm text-muted-foreground font-mono">FOCUS</div>
                     <div className="flex flex-wrap gap-2">
-                    {['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS'].map((skill) => (
+                    {['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS', 'Bootstrap'].map((skill) => (
                         <span
                         key={skill}
                         className="px-3 py-1 text-xs border border-border rounded-full hover:border-muted-foreground/50 transition-colors duration-300"
