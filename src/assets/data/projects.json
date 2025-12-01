@@ -2,76 +2,84 @@
     {
         "slug": "todo-app",
         "title": "Todo App",
-        "description": "A simple todo application to manage daily tasks",
+        "description": "A simple todo application to manage daily tasks.",
         "screenshots": [
             {
                 "url": "https://picsum.photos/seed/todoapp/600/400",
-                "caption": ""
+                "caption": "Screenshot of Todo App"
+            },
+            {
+                "url": "https://picsum.photos/seed/todoapp/600/400",
+                "caption": "Screenshot of Todo App"
+            },
+            {
+                "url": "https://picsum.photos/seed/todoapp/600/400",
+                "caption": "Screenshot of Todo App"
             }
         ],
-        "url": "https:example.com/todo-app",
-        "github": "https://github.com/MatthewSeymour1/react-portfolio",
+        "url": "https://example.com/todo-app",
+        "github": "",
         "date": "2025",
         "tags": ["React", "JavaScript", "CSS", "HTML"]
     },
-        {
+    {
         "slug": "gif-app",
         "title": "Gif App",
-        "description": "A simple Tenor Gif that demonstrates API integration and dynamic content loading.",
+        "description": "A simple Tenor Gif application that demonstrates API integration and dynamic content rendering.",
         "screenshots": [
             {
-                "url": "https://picsum.photos/seed/todoapp/600/400",
-                "caption": "Screenshot of the Gif App"
+                "url": "https://picsum.photos/seed/gifapp/600/400",
+                "caption": "Screenshot of Gif App"
             }
         ],
-        "url": "https:example.com/gif-app",
+        "url": "https://example.com/gif-app",
         "github": "",
         "date": "2025",
-        "tags": ["React", "JavaScript", "CSS", "HTML"]
+        "tags": ["React", "JavaScript", "CSS", "HTML", "APIs"]
     },
-        {
-        "slug": "todo-app2",
-        "title": "Todo App",
-        "description": "A simple todo application to manage daily tasks",
-        "screenshots": [
-            {
-                "url": "https://picsum.photos/seed/todoapp/600/400",
-                "caption": ""
-            }
-        ],
-        "url": "https:example.com/todo-app",
-        "github": "https://github.com/MatthewSeymour1/react-portfolio",
-        "date": "2025",
-        "tags": ["React", "JavaScript", "CSS", "HTML"]
-    },
-        {
+    {
         "slug": "gif-app2",
         "title": "Gif App",
-        "description": "A simple Tenor Gif that demonstrates API integration and dynamic content loading.",
+        "description": "A simple Tenor Gif application that demonstrates API integration and dynamic content rendering.",
         "screenshots": [
             {
-                "url": "https://picsum.photos/seed/todoapp/600/400",
-                "caption": "Screenshot of the Gif App"
+                "url": "https://picsum.photos/seed/gifapp/600/400",
+                "caption": "Screenshot of Gif App"
             }
         ],
-        "url": "https:example.com/gif-app",
+        "url": "https://example.com/gif-app",
         "github": "",
         "date": "2025",
-        "tags": ["React", "JavaScript", "CSS", "HTML"]
+        "tags": ["React", "JavaScript", "CSS", "HTML", "APIs"]
     },
-            {
+    {
         "slug": "gif-app3",
         "title": "Gif App",
-        "description": "A simple Tenor Gif that demonstrates API integration and dynamic content loading.",
+        "description": "A simple Tenor Gif application that demonstrates API integration and dynamic content rendering.",
         "screenshots": [
             {
-                "url": "https://picsum.photos/seed/todoapp/600/400",
-                "caption": "Screenshot of the Gif App"
+                "url": "https://picsum.photos/seed/gifapp/600/400",
+                "caption": "Screenshot of Gif App"
             }
         ],
-        "url": "https:example.com/gif-app",
+        "url": "https://example.com/gif-app",
         "github": "",
         "date": "2025",
-        "tags": ["React", "JavaScript", "CSS", "HTML"]
+        "tags": ["React", "JavaScript", "CSS", "HTML", "APIs"]
+    },
+    {
+        "slug": "gif-app4",
+        "title": "Gif App",
+        "description": "A simple Tenor Gif application that demonstrates API integration and dynamic content rendering.",
+        "screenshots": [
+            {
+                "url": "https://picsum.photos/seed/gifapp/600/400",
+                "caption": "Screenshot of Gif App"
+            }
+        ],
+        "url": "https://example.com/gif-app",
+        "github": "",
+        "date": "2025",
+        "tags": ["React", "JavaScript", "CSS", "HTML", "APIs"]
     }
 ]
