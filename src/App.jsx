@@ -34,6 +34,7 @@ export default function App() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if(entry.isIntersecting){
+          entry.target.classList.add('animate-fade-in-up');
           console.log(entry.target.id);
           setActiveSection(entry.target.id);
         }

@@ -1,3 +1,5 @@
+import TextType from '@/components/animations/TextType';
+
 export default function Intro(){
     return(
         <header id="intro" className="min-h-screen flex items-center">
@@ -6,8 +8,14 @@ export default function Intro(){
               <div className="space-y-3 sm:space-y-2">
                 <div className="text-sm text-muted-foreground tracking-wider">PORTFOLIO / 2025</div>
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight">
-                  Mohammed <br />
-                  <span className="text-muted-foreground">Che</span>
+                    <TextType 
+                    text={["Matthew Seymour"]}
+                    typingSpeed={75}
+                    pauseDuration={1500}
+                    showCursor={true}
+                    cursorCharacter="|"
+                    loop={false}
+                    />
                 </h1>
               </div>
 
