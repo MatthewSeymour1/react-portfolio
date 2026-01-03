@@ -11,8 +11,8 @@ export default function Contact() {
                 </p>
 
                 <div className="space-y-4">
-                  <a href="mailto:test@example.com" className="group flex items-center gap-3 text-foreground hover:text-muted-foreground transition-colors duration-300">
-                    <span className="text-base sm:text-lg">test@example.com</span>
+                  <a href="mailto:matthewseymour4@gmail.com" className="group flex items-center gap-3 text-foreground hover:text-muted-foreground transition-colors duration-300">
+                    <span className="text-base sm:text-lg">matthewseymour4@gmail.com</span>
                     <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
@@ -26,10 +26,10 @@ export default function Contact() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  { name: 'GitHub', handle: '@mohammedche', url: '#' },
-                  { name: 'IADT', handle: '@mohammedche', url: '#' },
-                  { name: 'HubSpot Community', handle: '@mohammedche', url: '#' },
-                  { name: 'LinkedIn', handle: 'mohammedche', url: '#' },
+                  { name: 'GitHub', handle: '@MatthewSeymour1', url: 'https://github.com/MatthewSeymour1' },
+                  { name: 'IADT', handle: '@MatthewSeymour', url: 'https://iadt.ie/' },
+                  { name: 'HubSpot Community', handle: '@MatthewSeymour', url: '#' },
+                  { name: 'LinkedIn', handle: 'Matthew Seymour', url: 'https://www.linkedin.com/in/matthew-seymour-414239396/' },
                 ].map((social) => (
                   <a
                     key={social.name}

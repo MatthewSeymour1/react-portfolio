@@ -23,47 +23,47 @@
         "tags": ["React", "JavaScript", "CSS", "HTML"]
     },
     {
-        "slug": "gif-app",
-        "title": "Gif App",
-        "description": "A simple Tenor Gif application that demonstrates API integration and dynamic content rendering.",
+        "slug": "savour",
+        "title": "Savour",
+        "description": "Insert Savour description here !!!!!!!",
         "screenshots": [
             {
-                "url": "https://picsum.photos/seed/gifapp/600/400",
-                "caption": "Screenshot of Gif App"
+                "url": "public/images/savourLogoImg.png",
+                "caption": "Screenshot of Savour App"
             }
         ],
-        "url": "https://example.com/gif-app",
-        "github": "",
-        "date": "2025",
-        "tags": ["React", "JavaScript", "CSS", "HTML", "APIs"]
+        "url": "https://matthewseymour.netlify.app/",
+        "github": "https://github.com/MatthewSeymour1/WDFMResponsiveWebsite",
+        "date": "2024",
+        "tags": [ "HTML", "CSS", "BOOTSTRAP"]
     },
     {
-        "slug": "gif-app2",
-        "title": "Gif App",
-        "description": "A simple Tenor Gif application that demonstrates API integration and dynamic content rendering.",
+        "slug": "sleepify",
+        "title": "Sleepify",
+        "description": "Sleep Tracker Application",
         "screenshots": [
             {
-                "url": "https://picsum.photos/seed/gifapp/600/400",
-                "caption": "Screenshot of Gif App"
+                "url": "public/images/line-graph.png",
+                "caption": "Screenshot of Sleepify App"
             }
         ],
         "url": "https://example.com/gif-app",
-        "github": "",
-        "date": "2025",
-        "tags": ["React", "JavaScript", "CSS", "HTML", "APIs"]
+        "github": "https://github.com/MatthewSeymour1/Sleep",
+        "date": "2024",
+        "tags": ["PHP", "Laravel", "CSS", "HTML"]
     },
     {
-        "slug": "gif-app3",
-        "title": "Gif App",
+        "slug": "rest-countries",
+        "title": "Rest Countries App",
         "description": "A simple Tenor Gif application that demonstrates API integration and dynamic content rendering.",
         "screenshots": [
             {
-                "url": "https://picsum.photos/seed/gifapp/600/400",
-                "caption": "Screenshot of Gif App"
+                "url": "public/images/rest-countries.png",
+                "caption": "Screenshot of Rest Countries App"
             }
         ],
-        "url": "https://example.com/gif-app",
-        "github": "",
+        "url": "https://matthewseymour-restcountries.web.app/",
+        "github": "https://github.com/MatthewSeymour1/RestCountries",
         "date": "2025",
         "tags": ["React", "JavaScript", "CSS", "HTML", "APIs"]
     },

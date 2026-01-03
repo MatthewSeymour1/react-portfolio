@@ -16,7 +16,10 @@ import Footer from './components/Footer';
 export default function App() {
 
   const [activeSection, setActiveSection] = useState('');
-  const [isDark, setIsDark] = useState(localStorage.getItem('dark') === 'true');
+  const [isDark, setIsDark] = useState(() => {
+    const saved = localStorage.getItem('dark');
+    return saved === null ? true : saved === 'true';
+  });
 
   useEffect(() => {
     console.log("Dark Mode:", isDark);
