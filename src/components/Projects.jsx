@@ -18,7 +18,7 @@ export default function Projects() {
             Projects I have worked on.
           </p>
         </div>
-        <div className="grid gap-8 sm:gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:gap-10 md:grid-cols-2 lg:grid-cols-3 ">
           {projectCards}
         </div>
       </div>

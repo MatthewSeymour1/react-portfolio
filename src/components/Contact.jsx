@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-        <section id="contact" className="py-20 sm:py-32 ">
+        <section id="contact" className="py-20 sm:py-32">
           <div className="grid lg:grid-cols-2 gap-12 sm:gap-16">
             <div className="space-y-6 sm:space-y-8">
               <h2 className="text-3xl sm:text-4xl font-light">Let's Connect</h2>
@@ -27,8 +27,6 @@ export default function Contact() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   { name: 'GitHub', handle: '@MatthewSeymour1', url: 'https://github.com/MatthewSeymour1' },
-                  { name: 'IADT', handle: '@MatthewSeymour', url: 'https://iadt.ie/' },
-                  { name: 'HubSpot Community', handle: '@MatthewSeymour', url: '#' },
                   { name: 'LinkedIn', handle: 'Matthew Seymour', url: 'https://www.linkedin.com/in/matthew-seymour-414239396/' },
                 ].map((social) => (
                   <a

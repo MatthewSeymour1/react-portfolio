@@ -55,7 +55,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-background text-foreground relative">
       <Navbar activeSection={activeSection} />
-      <main className='max-w-4xl mx-auto px-6 sm:px-8 lg:px-16'>
+      <main className='max-w-7xl mx-auto px-6 sm:px-8 lg:px-16'>
         <Intro />
         <Projects />
         <Contact />

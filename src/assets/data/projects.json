@@ -28,8 +28,20 @@
         "description": "Insert Savour description here !!!!!!!",
         "screenshots": [
             {
-                "url": "public/images/savourLogoImg.png",
+                "url": "images/savourLogoImg.png",
+                "caption": "Screenshot of Savour Logo"
+            },
+            {
+                "url": "images/savourHome.png",
                 "caption": "Screenshot of Savour App"
+            },
+            {
+                "url": "images/savourFAQ.png",
+                "caption": "Screenshot of Savour FAQs"
+            },
+            {
+                "url": "images/savourContactUs.png",
+                "caption": "Screenshot of Savour Contact Us"
             }
         ],
         "url": "https://matthewseymour.netlify.app/",
@@ -43,7 +55,7 @@
         "description": "Sleep Tracker Application",
         "screenshots": [
             {
-                "url": "public/images/line-graph.png",
+                "url": "images/line-graph.png",
                 "caption": "Screenshot of Sleepify App"
             }
         ],
@@ -58,8 +70,12 @@
         "description": "A simple Tenor Gif application that demonstrates API integration and dynamic content rendering.",
         "screenshots": [
             {
-                "url": "public/images/rest-countries.png",
+                "url": "images/rest-countries.png",
                 "caption": "Screenshot of Rest Countries App"
+            },
+            {
+                "url": "images/rest-countriesSingleCountry.png",
+                "caption": "Screenshot of Rest Countries Single Country Page"
             }
         ],
         "url": "https://matthewseymour-restcountries.web.app/",
@@ -68,17 +84,25 @@
         "tags": ["React", "JavaScript", "CSS", "HTML", "APIs"]
     },
     {
-        "slug": "gif-app4",
-        "title": "Gif App",
+        "slug": "medical-clinic",
+        "title": "Medical Clinic",
         "description": "A simple Tenor Gif application that demonstrates API integration and dynamic content rendering.",
         "screenshots": [
             {
-                "url": "https://picsum.photos/seed/gifapp/600/400",
-                "caption": "Screenshot of Gif App"
+                "url": "images/medical-clinicLogin.png",
+                "caption": "Screenshot of Medical Clinic Login Page"
+            },
+            {
+                "url": "images/medical-clinic.png",
+                "caption": "Screenshot of Medical Clinic App"
+            },
+            {
+                "url": "images/medical-clinicCreateDoctor.png",
+                "caption": "Screenshot of Medical Clinic Create Doctor Form"
             }
         ],
-        "url": "https://example.com/gif-app",
-        "github": "",
+        "url": "https://medical-clinic-6d553.web.app",
+        "github": "https://github.com/MatthewSeymour1/front-end-dev-CA2-medical-clinic",
         "date": "2025",
         "tags": ["React", "JavaScript", "CSS", "HTML", "APIs"]
     }
