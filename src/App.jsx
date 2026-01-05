@@ -5,6 +5,7 @@ import Intro from './components/Intro';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import About from './components/About';
 
 // pages
 // import Home from './pages/Home';
@@ -31,15 +32,20 @@ export default function App() {
   }, [isDark]);
 
   useEffect(() => {
-    const sections = ['intro', 'projects', 'contact'];
+    const sections = ['intro', 'about', 'projects', 'contact'];
     const targets = sections.map(section => document.getElementById(section));
-
+    targets.forEach(el => el.classList.add('opacity-0'));
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if(entry.isIntersecting){
-          entry.target.classList.add('animate-fade-in-up');
-          console.log(entry.target.id);
-          setActiveSection(entry.target.id);
+            entry.target.classList.remove('animate-fade-out-down');
+            entry.target.classList.add('animate-fade-in-up');
+            console.log(entry.target.id);
+            setActiveSection(entry.target.id);
+        }
+        else {
+            entry.target.classList.remove('animate-fade-in-up');
+            entry.target.classList.add('animate-fade-out-down');
         }
       });
     }, { threshold: 0.3, rootMargin: '0px 0px 0px 0px' });
@@ -57,6 +63,7 @@ export default function App() {
       <Navbar activeSection={activeSection} />
       <main className='max-w-7xl mx-auto px-6 sm:px-8 lg:px-16'>
         <Intro />
+        <About />
         <Projects />
         <Contact />
         <Footer toggleTheme={toggleTheme} isDark={isDark} />
