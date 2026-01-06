@@ -1,31 +1,31 @@
 [
     {
-        "slug": "todo-app",
-        "title": "Todo App",
-        "description": "A simple todo application to manage daily tasks.",
+        "slug": "medical-clinic",
+        "title": "Medical Clinic",
+        "description": "A medical clinic application that supports user authentication and CRUD operations for managing doctors and patients.",
         "screenshots": [
             {
-                "url": "https://picsum.photos/seed/todoapp/600/400",
-                "caption": "Screenshot of Todo App"
+                "url": "images/medical-clinicLogin.png",
+                "caption": "Screenshot of Medical Clinic Login Page"
             },
             {
-                "url": "https://picsum.photos/seed/todoapp/600/400",
-                "caption": "Screenshot of Todo App"
+                "url": "images/medical-clinic.png",
+                "caption": "Screenshot of Medical Clinic App"
             },
             {
-                "url": "https://picsum.photos/seed/todoapp/600/400",
-                "caption": "Screenshot of Todo App"
+                "url": "images/medical-clinicCreateDoctor.png",
+                "caption": "Screenshot of Medical Clinic Create Doctor Form"
             }
         ],
-        "url": "https://example.com/todo-app",
-        "github": "",
+        "url": "https://medical-clinic-6d553.web.app",
+        "github": "https://github.com/MatthewSeymour1/front-end-dev-CA2-medical-clinic",
         "date": "2025",
-        "tags": ["React", "JavaScript", "CSS", "HTML"]
+        "tags": ["React", "JavaScript", "CSS", "HTML", "APIs"]
     },
     {
         "slug": "savour",
         "title": "Savour",
-        "description": "Insert Savour description here !!!!!!!",
+        "description": "A responsive website for a food delivery service concept called Savour, focusing on usability, visual consistency, and an intuitive user experience across devices.",
         "screenshots": [
             {
                 "url": "images/savourLogoImg.png",
@@ -50,9 +50,28 @@
         "tags": [ "HTML", "CSS", "BOOTSTRAP"]
     },
     {
+        "slug": "jetpack-game",
+        "title": "Jetpack Game",
+        "description": "A simple Jetpack game. The player controls a character with a jetpack to avoid obstacles and survive as long as possible.",
+        "screenshots": [
+            {
+                "url": "images/jetpackGame.png",
+                "caption": "Screenshot of Jetpack Game"
+            },
+            {
+                "url": "images/jetpackGameTwo.png",
+                "caption": "Screenshot of Jetpack Game"
+            }
+        ],
+        "url": "https://jetpack-game-matthew-seymour.web.app",
+        "github": "https://github.com/MatthewSeymour1/JetpackGame",
+        "date": "2024",
+        "tags": ["JavaScript", "CSS", "HTML", "p5.js"]
+    },
+    {
         "slug": "sleepify",
         "title": "Sleepify",
-        "description": "Sleep Tracker Application",
+        "description": "A sleep tracking web application that presents user sleep data through visual charts and summaries, with a focus on data display and clarity.",
         "screenshots": [
             {
                 "url": "images/line-graph.png",
@@ -62,12 +81,12 @@
         "url": "https://example.com/gif-app",
         "github": "https://github.com/MatthewSeymour1/Sleep",
         "date": "2024",
-        "tags": ["PHP", "Laravel", "CSS", "HTML"]
+        "tags": ["PHP", "Laravel", "CSS", "HTML", "MySQL", "phpMyAdmin", "Charts.js"]
     },
     {
         "slug": "rest-countries",
         "title": "Rest Countries App",
-        "description": "A simple Tenor Gif application that demonstrates API integration and dynamic content rendering.",
+        "description": "An application that fetches and displays data from the Rest Countries API, allowing users to explore information about different countries.",
         "screenshots": [
             {
                 "url": "images/rest-countries.png",
@@ -81,29 +100,6 @@
         "url": "https://matthewseymour-restcountries.web.app/",
         "github": "https://github.com/MatthewSeymour1/RestCountries",
         "date": "2025",
-        "tags": ["React", "JavaScript", "CSS", "HTML", "APIs"]
-    },
-    {
-        "slug": "medical-clinic",
-        "title": "Medical Clinic",
-        "description": "A simple Tenor Gif application that demonstrates API integration and dynamic content rendering.",
-        "screenshots": [
-            {
-                "url": "images/medical-clinicLogin.png",
-                "caption": "Screenshot of Medical Clinic Login Page"
-            },
-            {
-                "url": "images/medical-clinic.png",
-                "caption": "Screenshot of Medical Clinic App"
-            },
-            {
-                "url": "images/medical-clinicCreateDoctor.png",
-                "caption": "Screenshot of Medical Clinic Create Doctor Form"
-            }
-        ],
-        "url": "https://medical-clinic-6d553.web.app",
-        "github": "https://github.com/MatthewSeymour1/front-end-dev-CA2-medical-clinic",
-        "date": "2025",
-        "tags": ["React", "JavaScript", "CSS", "HTML", "APIs"]
+        "tags": ["React", "JavaScript", "CSS", "HTML", "APIs", "DaisyUI", "TailwindCSS", "Motion"]
     }
 ]

@@ -1,6 +1,6 @@
 export default function Footer({toggleTheme, isDark}) {
     return (
-        <footer className="py-12 sm:py-16 border-t border-border mt-20">
+        <footer className="py-12 sm:py-16">
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 sm:gap-8">
             <div className="space-y-2">
               <div className="text-sm text-muted-foreground">© 2025 Matthew Seymour. All rights reserved.</div>

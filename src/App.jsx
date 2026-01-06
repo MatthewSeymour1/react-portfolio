@@ -35,19 +35,49 @@ export default function App() {
     const sections = ['intro', 'about', 'projects', 'contact'];
     const targets = sections.map(section => document.getElementById(section));
     targets.forEach(el => el.classList.add('opacity-0'));
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.classList.remove('animate-fade-out-down');
-            entry.target.classList.add('animate-fade-in-up');
-            console.log(entry.target.id);
-            setActiveSection(entry.target.id);
+    let canFade = true;
+    const projectsSection = document.getElementById('projects');
+    const visibleSections = new Set();
+    const handleResize = () => {
+        if (window.innerWidth < 640) {
+            canFade = false;
+            projectsSection.classList.remove('opacity-0');
         }
         else {
-            entry.target.classList.remove('animate-fade-in-up');
-            entry.target.classList.add('animate-fade-out-down');
+            canFade = true;
+            targets.forEach(el => {
+                if (!visibleSections.has(el.id)) {
+                    el.classList.add('opacity-0');
+                    el.classList.remove('opacity-100');
+                }
+            });
         }
-      });
+    };
+    handleResize();
+    
+    window.addEventListener('resize', handleResize);
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (canFade) {
+                entry.target.classList.remove('opacity-100');
+                if(entry.isIntersecting){
+                    visibleSections.add(entry.target.id);
+                    entry.target.classList.remove('animate-fade-out-down');
+                    entry.target.classList.add('animate-fade-in-up');
+                    console.log(entry.target.id);
+                    setActiveSection(entry.target.id);
+                }
+                else {
+                    visibleSections.delete(entry.target.id);
+                    entry.target.classList.remove('animate-fade-in-up');
+                    entry.target.classList.add('animate-fade-out-down');
+                }
+            }
+            else {
+                entry.target.classList.remove('animate-fade-out-down', 'animate-fade-in-up');
+                entry.target.classList.add('opacity-100');
+            }
+        });
     }, { threshold: 0.3, rootMargin: '0px 0px 0px 0px' });
 
     targets.forEach(el => observer.observe(el))

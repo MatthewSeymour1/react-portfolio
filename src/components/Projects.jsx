@@ -10,7 +10,7 @@ export default function Projects() {
   ));
 
     return (
-    <section id="projects" className="py-20 sm:py-32">
+    <section id="projects" className="py-20 sm:pt-32 sm:pb-40">
       <div className="space-y-10">
         <div className="space-y-6 sm:space-y-8 max-w-2xl">
           <h2 className="text-3xl sm:text-4xl font-light">Projects</h2>
