@@ -1,6 +1,8 @@
+import { motion } from 'motion/react';
+
 export default function Contact() {
     return (
-        <section id="contact" className="py-20 sm:py-40 border-t border-b border-border">
+        <motion.section id="contact" className="py-20 sm:py-40 border-t border-b border-border" initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0, opacity: 1}} transition={{duration: 1}} >
           <div className="grid lg:grid-cols-2 gap-12 sm:gap-16">
             <div className="space-y-6 sm:space-y-8">
               <h2 className="text-3xl sm:text-4xl font-light">Let's Connect</h2>
@@ -43,6 +45,6 @@ export default function Contact() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
     );
 }

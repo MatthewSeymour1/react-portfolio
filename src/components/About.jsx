@@ -1,6 +1,8 @@
+import { motion } from 'motion/react';
+
 export default function About() {
     return (
-        <section id="about" className="py-20 sm:py-32 border-t border-b border-border ">
+        <motion.section id="about" className="py-20 sm:py-32 border-t border-b border-border " initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0, opacity: 1}} transition={{duration: 1}} >
           <div className="max-w-7xl mx-auto space-y-6 sm:space-y-8">
             <h2 className="text-3xl sm:text-4xl font-light">About Me</h2>
 
@@ -16,6 +18,6 @@ export default function About() {
               </p>
             </div>
           </div>
-        </section>
+        </motion.section>
     );
 }

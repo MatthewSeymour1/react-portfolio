@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import About from './components/About';
+import Aurora from '@/components/animations/Aurora.jsx';
 
 // pages
 // import Home from './pages/Home';
@@ -34,62 +35,36 @@ export default function App() {
   useEffect(() => {
     const sections = ['intro', 'about', 'projects', 'contact'];
     const targets = sections.map(section => document.getElementById(section));
-    targets.forEach(el => el.classList.add('opacity-0'));
-    let canFade = true;
-    const projectsSection = document.getElementById('projects');
-    const visibleSections = new Set();
-    const handleResize = () => {
-        if (window.innerWidth < 640) {
-            canFade = false;
-            projectsSection.classList.remove('opacity-0');
-        }
-        else {
-            canFade = true;
-            targets.forEach(el => {
-                if (!visibleSections.has(el.id)) {
-                    el.classList.add('opacity-0');
-                    el.classList.remove('opacity-100');
-                }
-            });
-        }
-    };
-    handleResize();
-    
-    window.addEventListener('resize', handleResize);
+  
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (canFade) {
-                entry.target.classList.remove('opacity-100');
-                if(entry.isIntersecting){
-                    visibleSections.add(entry.target.id);
-                    entry.target.classList.remove('animate-fade-out-down');
-                    entry.target.classList.add('animate-fade-in-up');
-                    console.log(entry.target.id);
-                    setActiveSection(entry.target.id);
-                }
-                else {
-                    visibleSections.delete(entry.target.id);
-                    entry.target.classList.remove('animate-fade-in-up');
-                    entry.target.classList.add('animate-fade-out-down');
-                }
-            }
-            else {
-                entry.target.classList.remove('animate-fade-out-down', 'animate-fade-in-up');
-                entry.target.classList.add('opacity-100');
-            }
-        });
-    }, { threshold: 0.3, rootMargin: '0px 0px 0px 0px' });
-
-    targets.forEach(el => observer.observe(el))
-
-    return () => observer.disconnect()
-
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, { threshold: 0.3 });
+  
+    targets.forEach(el => observer.observe(el));
+  
+    return () => observer.disconnect();
   }, []);
+  
 
   const toggleTheme = () => setIsDark(currentMode => !currentMode);
 
   return (
-    <div className="min-h-screen bg-background text-foreground relative">
+    
+    <div className="min-h-screen text-foreground relative">
+        <div className="fixed inset-0 bg-background -z-20"></div>
+        <div className="fixed inset-0 -z-10">
+            <Aurora
+                colorStops={isDark ? ["#3A29FF", "#FF94B4", "#FF3232"] : ["#FFF1E0", "#FFD6A5", "#FFC6A3"]}
+                blend={isDark ? 0.5 : 1.4}
+                amplitude={isDark ? 1.0 : 0.6}
+                speed={0.5}
+            />
+        </div>
+
       <Navbar activeSection={activeSection} />
       <main className='max-w-7xl mx-auto px-6 sm:px-8 lg:px-16'>
         <Intro />

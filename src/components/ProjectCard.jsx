@@ -27,6 +27,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge";
+import { motion } from 'motion/react';
 
 // Contract:
 // props.project: {
@@ -39,6 +40,7 @@ export function ProjectCard({ project }) {
   const screenshot = screenshots[0];
 
   return (
+    <motion.div initial={{ y: 50, opacity: 0 }} whileInView={{ y: 0, opacity: 1}} transition={{duration: 1}} >
     <Card className="flex flex-col h-full overflow-hidden">
       {screenshot?.url && (
         <div className="aspect-video w-full overflow-hidden">
@@ -170,6 +172,7 @@ export function ProjectCard({ project }) {
         </Dialog>
       </CardFooter>
     </Card>
+    </motion.div>
   );
 }
 

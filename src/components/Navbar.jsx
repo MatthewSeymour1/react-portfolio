@@ -1,8 +1,8 @@
-
+import { motion } from 'motion/react';
 
 export default function Navbar({ activeSection }){
     return (
-        <nav className="fixed left-8 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
+        <motion.nav className="fixed left-8 top-1/2 -translate-y-1/2 z-10 hidden lg:block" initial={{ x: -25, opacity: 0 }} animate={{ x: 0, opacity: 1}} transition={{duration: 1}} >
           <div className="flex flex-col gap-4">
             {['intro', 'about', 'projects', 'contact'].map(section => (
                 <button
@@ -13,6 +13,6 @@ export default function Navbar({ activeSection }){
                 ><span className="text-sm ml-4" >{section}</span></button>
             ))}
           </div>
-        </nav>
+        </motion.nav>
     );
 }

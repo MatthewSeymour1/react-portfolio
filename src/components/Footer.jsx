@@ -26,6 +26,17 @@ export default function Footer({toggleTheme, isDark}) {
                   </svg>
                 )} 
               </button>
+              <button
+                onClick={() => {
+                    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+                }}
+                className="group p-3 rounded-lg border border-border hover:border-muted-foreground/50 transition-all duration-300"
+                aria-label="scroll-to-top-button"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-muted-foreground group-hover:text-foreground transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14"/><path d="M16 9l-4 -4"/><path d="M8 9l4 -4"/></svg>
+
+              </button>
+
             </div>
           </div>
         </footer>

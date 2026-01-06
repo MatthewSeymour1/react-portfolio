@@ -1,10 +1,11 @@
 import TextType from '@/components/animations/TextType';
+import { motion } from 'motion/react';
 
 export default function Intro(){
     return(
-        <header id="intro" className="min-h-screen flex items-center">
+        <header id="intro" className="min-h-screen flex items-center" >
           <div className="grid lg:grid-cols-5 gap-12 sm:gap-16 w-full">
-            <div className="lg:col-span-3 space-y-6 sm:space-y-8">
+            <motion.div className="lg:col-span-3 space-y-6 sm:space-y-8" initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0, opacity: 1}} transition={{duration: 1}} >
               <div className="space-y-3 sm:space-y-2">
                 <div className="text-sm text-muted-foreground tracking-wider">PORTFOLIO / 2025</div>
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight">
@@ -34,9 +35,9 @@ export default function Intro(){
                   <div>Ireland</div>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="lg:col-span-2 flex flex-col justify-end space-y-6 sm:space-y-8 mt-8 lg:mt-0">
+            <motion.div className="lg:col-span-2 flex flex-col justify-end space-y-6 sm:space-y-8 mt-8 lg:mt-0" initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0, opacity: 1}} transition={{duration: 1}} >
               <div className="space-y-4">
                 <div className="text-sm text-muted-foreground font-mono">CURRENTLY</div>
                 <div className="space-y-2">
@@ -59,7 +60,7 @@ export default function Intro(){
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </header>
     );
