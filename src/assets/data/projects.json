@@ -74,11 +74,22 @@
         "description": "A sleep tracking web application that presents user sleep data through visual charts and summaries, with a focus on data display and clarity.",
         "screenshots": [
             {
-                "url": "images/line-graph.png",
-                "caption": "Screenshot of Sleepify App"
+                "url": "images/sleepifyGraph.png",
+                "caption": "Screenshot of Sleepify Per Day Line Graph"
+            },
+            {
+                "url": "images/sleepifyBarGraph.png",
+                "caption": "Screenshot of Sleepify Per Weel Bar Graph"
+            },
+            {
+                "url": "images/sleepifyTable.png",
+                "caption": "Screenshot of Sleepify's Table of all Sleep Data"
+            },
+            {
+                "url": "images/sleepifyAdvice.png",
+                "caption": "Screenshot of Sleepify's Advice of The Day Feature"
             }
         ],
-        "url": "https://example.com/gif-app",
         "github": "https://github.com/MatthewSeymour1/Sleep",
         "date": "2024",
         "tags": ["PHP", "Laravel", "CSS", "HTML", "MySQL", "phpMyAdmin", "Charts.js"]

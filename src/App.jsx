@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import About from './components/About';
 import Aurora from '@/components/animations/Aurora.jsx';
+import Iridescence from '@/components/animations/Iridescence.jsx';
 
 // pages
 // import Home from './pages/Home';
@@ -53,16 +54,23 @@ export default function App() {
   const toggleTheme = () => setIsDark(currentMode => !currentMode);
 
   return (
-    
+
     <div className="min-h-screen text-foreground relative">
-        <div className="fixed inset-0 bg-background -z-20"></div>
         <div className="fixed inset-0 -z-10">
-            <Aurora
-                colorStops={isDark ? ["#3A29FF", "#FF94B4", "#FF3232"] : ["#FFF1E0", "#FFD6A5", "#FFC6A3"]}
-                blend={isDark ? 0.5 : 1.4}
-                amplitude={isDark ? 1.0 : 0.6}
-                speed={0.5}
-            />
+            {isDark ? 
+                <Aurora
+                    colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
+                    blend={isDark ? 0.5 : 1.4}
+                    amplitude={isDark ? 1.0 : 0.6}
+                    speed={0.5}
+                /> : 
+                <Iridescence
+                    color={[1,1,1]}
+                    mouseReact={false}
+                    amplitude={0.1}
+                    speed={0.7}
+                />
+            }
         </div>
 
       <Navbar activeSection={activeSection} />
